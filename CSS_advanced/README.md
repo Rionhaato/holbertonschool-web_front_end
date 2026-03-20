@@ -1,169 +1,214 @@
-# HTML Advanced
+# CSS Advanced
 
-This project contains the HTML deliverables for the Holberton School `html_advanced` module.
+This project contains the CSS deliverables for the Holberton School `CSS_advanced` module. The work styles the **Techium** website progressively, starting from basic variables and typography, then moving into layout, navigation, cards, dark sections, buttons, and transitions.
 
-The goal of the project is to build a complete multi-section website for **Techium** using only HTML. No CSS is used in this phase. The work focuses on clean document structure, semantic HTML, accessibility-oriented markup, and progressive construction of a realistic webpage and styleguide.
+The project is organized as a task-by-task stylesheet sequence. Each file builds on the previous one and reflects a specific checkpoint from the project instructions.
 
-## Project Objectives
+## Project Goals
 
-This project practices:
+This section focuses on applying advanced CSS concepts to a realistic multi-section landing page.
 
-- Building a valid HTML5 page structure
-- Using semantic tags such as `header`, `main`, `footer`, `section`, `article`, `nav`, and `aside`
-- Organizing headings correctly from `h1` to `h6`
-- Creating links, lists, tables, blockquotes, media, and embedded content
-- Structuring a homepage and companion pages with reusable HTML patterns
-- Creating a styleguide page with examples of common HTML elements
+Main objectives:
 
-## Final Deliverables
+- Define and reuse CSS custom properties
+- Build a typographic system with scalable font sizes, line heights, and font weights
+- Normalize browser defaults with `normalize.css`
+- Use pseudo-classes and pseudo-elements
+- Create reusable layout utilities for containers, rows, and columns
+- Style navigation, buttons, service cards, work cards, testimonials, and footer content
+- Implement dark theme sections with variable overrides
+- Add transitions and hover effects for interactive components
 
-The two final pages for the project are:
+## Technologies Used
 
-- `index.html`: final homepage for Techium
-- `styleguide.html`: final styleguide page containing examples of HTML elements used in the project
+- HTML5
+- CSS3
+- CSS custom properties
+- `normalize.css` v8.0.1
+- Inline SVG icons
 
-Additional companion pages are also included:
+## Directory Structure
 
-- `about.html`
-- `article.html`
-- `contact.html`
-- `latest_news.html`
+### Stylesheets
 
-## Directory Contents
+The `styles/` directory contains the incremental task files:
 
-### Main HTML pages
+- `1-style.css` to `32-style.css`
 
-- `index.html`: final homepage with navigation, sections, images, testimonials, social icons, and footer links
-- `styleguide.html`: final styleguide with headings, paragraphs, lists, horizontal rule, blockquotes, typography, table, details, video, audio, and iframe examples
-- `about.html`: about page derived from the homepage structure
-- `article.html`: simple article page with `aside`
-- `contact.html`: contact page derived from the homepage structure
-- `latest_news.html`: latest news page derived from the homepage structure
+Each stylesheet represents one task milestone. The sequence is important because each file extends the previous one.
 
-### Exercise progression files
+### Images
 
-The numbered HTML files document the step-by-step progression of the project:
+The `images/` directory contains the assets used by the Techium layout:
 
-- `0-index.html` to `36-index.html`
-- `11-styleguide.html`, `13-styleguide.html`, `26-styleguide.html`, `28-styleguide.html`, `30-styleguide.html`, `32-styleguide.html`, `33-styleguide.html`, `34-styleguide.html`, `38-styleguide.html`, `39-styleguide.html`
-
-These files reflect each task milestone from the project instructions.
-
-### Assets
-
-- `favicon.ico`
-- `favicon.png`
+- `favicon.jpg`
 - `logo-black.png`
-- `images/`
-
-The `images/` directory contains the image assets used by the final homepage:
-
+- `logo-white.png`
+- `pic-about-01.jpg`
 - `pic-work-01.jpg`
 - `pic-work-02.jpg`
 - `pic-work-03.jpg`
-- `pic-about-us.jpg`
-- `pic-blog-01.jpg`
-- `pic-blog-02.jpg`
-- `pic-blog-03.jpg`
+- `pic-article-01.jpg`
+- `pic-article-02.jpg`
+- `pic-article-03.jpg`
 - `pic-person-01.jpg`
 - `pic-person-02.jpg`
 - `pic-person-03.jpg`
 
-## Homepage Structure
+Some earlier placeholder image files were also preserved for continuity with the original workspace.
 
-The final homepage includes:
+## What The Stylesheets Cover
 
-- A header with logo and navigation menu
-- A hero section with a call-to-action link
-- A services section
-- A works section with project images
-- An about section with image and descriptive content
-- A latest news section with article previews and author names
-- A testimonials section with avatar images and quotes
-- A contact section with contact call-to-action
-- A footer with address, social media links, and policy links
+### Tasks 1 to 4
 
-## Styleguide Structure
+- Smooth scrolling
+- Base text colors
+- Hidden utility class
+- Custom properties for colors
+- Base and title font-family variables
 
-The final styleguide includes examples for:
+### Tasks 5 to 8
 
-- Headings
-- Paragraphs
-- Lists
-- Horizontal rule
-- Inline and block quotes
-- Typography elements such as `address`, `pre`, and `mark`
-- Tables with `scope` attributes
-- `details` and `summary`
-- Video embedding
-- Audio embedding
-- Iframe embedding
+- Font size variables
+- Root font scaling
+- Font weight variables
+- Google Fonts integration
+- Line-height variables
 
-## Key HTML Concepts Used
+### Tasks 9 to 12
 
-### Semantic structure
+- Link decoration reset
+- Section header alignment
+- Section tagline formatting
+- Section title variables and typography
 
-The project relies on semantic tags instead of generic containers whenever the content has a clear meaning:
+### Tasks 13 to 16
 
-- `header` for introductory and navigational content
-- `nav` for navigation links
-- `main` for primary page content
-- `section` for thematic content groups
-- `article` for self-contained content items
-- `footer` for page-ending information and links
+- Link pseudo-classes
+- Browser normalization
+- Universal `box-sizing`
+- Fixed-width centered container
 
-### Headings hierarchy
+### Tasks 17 to 20
 
-Headings are introduced progressively to maintain a logical content outline:
+- Section and footer spacing
+- Navbar customization
+- Grid layout with rows and columns
+- Row clearing with pseudo-elements
 
-- `h1` for the main page title
-- `h2` for section titles
-- `h3` for subsection or article titles
+### Tasks 21 to 24
 
-### Media and embeds
+- Shared `col-` selector cleanup
+- Dark section theme with variable overrides
+- Footer and social icon dark-theme fixes
+- Service card background and hover states
 
-The project includes examples of:
+### Tasks 25 to 28
 
-- Local images with `img`
-- Inline SVG icons in the footer
-- HTML5 video with poster image, controls, and loop
-- HTML5 audio with controls
-- Embedded external content with `iframe`
+- Button variables and hover styling
+- Testimonial avatar and citation styling
+- Hero section sizing and spacing
+- Header and logo positioning
 
-### Text-level semantics
+### Tasks 29 to 32
 
-The styleguide demonstrates:
+- Navigation hover indicator using `::before`
+- Work card overlays
+- Decorative quote mark on testimonials
+- Transitions and transforms for buttons, navigation, and work cards
 
-- `q` for inline quotations
-- `blockquote` for block quotations
-- `cite` for quote attribution
-- `small` for article author labels
-- `mark` for highlighted text
-- `address` for contact/location formatting
-- `pre` for preformatted code examples
+## Final Styled Components
 
-## How To Open The Project
+By the end of the project, the stylesheet sequence supports:
 
-Open the final homepage:
+- Header with positioned logo and horizontal navigation
+- Hero section with large title and call-to-action button
+- Services cards with hover background change
+- Work cards with image overlays and hover transitions
+- About section layout with columns
+- Latest news cards
+- Testimonial cards with circular avatars and decorative quote marks
+- Contact section with centered call-to-action
+- Footer with address, social links, and policy navigation
+- Dark themed sections using `data-section-theme="dark"`
 
-```bash
-start index.html
+## Important CSS Concepts Demonstrated
+
+### CSS variables
+
+The project uses custom properties extensively for:
+
+- colors
+- fonts
+- font sizes
+- font weights
+- spacing
+- transitions
+- button styling
+- navigation styling
+
+This makes the design more maintainable and consistent.
+
+### Pseudo-classes and pseudo-elements
+
+Examples used in this project include:
+
+- `:link`
+- `:visited`
+- `:hover`
+- `:active`
+- `::before`
+- `::after`
+
+These are used for link states, decorative effects, clearing floats, and navigation hover bars.
+
+### Grid system with floats
+
+Before flexbox or grid is introduced, the layout is built using:
+
+- `.row`
+- `.col-1-2`
+- `.col-1-3`
+- float-based columns
+- clearfix with `.row::after`
+
+### Theme overrides
+
+Dark sections are implemented by redefining custom properties inside:
+
+```css
+[data-section-theme="dark"]
 ```
 
-Open the final styleguide:
+This approach changes colors without rewriting every component rule.
 
-```bash
-start styleguide.html
+### Transitions and transforms
+
+The project adds lightweight motion using:
+
+- `transition`
+- `transform: scale(...)`
+- hover overlays
+- animated navigation indicators
+
+## How To Use
+
+Open the project root and link the required stylesheet in the HTML file being tested.
+
+Example:
+
+```html
+<link rel="stylesheet" href="styles/32-style.css">
 ```
 
-You can also open any numbered task file in a browser to inspect how the structure evolved from one task to the next.
+This will apply the most complete version of the stylesheet sequence.
 
-## Validation Note
+## Notes
 
-Some intermediate tasks explicitly state that W3C validation is not required. As a result, several numbered checkpoint files were built to match the exercise instructions rather than strict validation requirements.
-
-The final deliverables were created to reflect the project tasks exactly as completed in this repository.
+- Intermediate files intentionally reflect each task step rather than a single optimized production stylesheet.
+- Some tasks explicitly do not require W3C validation.
+- The final sequence was completed in order from `1-style.css` through `32-style.css`.
 
 ## Author
 
-Holberton School student project for the **Techium** HTML Advanced module.
+Holberton School student project for the **Techium CSS Advanced** module.
